@@ -127,6 +127,16 @@ form {
     object-fit: cover;
 }
 
+.icon{
+    width: 25%;
+    height:25%;
+    filter: drop-shadow(0 0 30px #6C6F7F);
+}
+
+/* img.icon:hover{
+    filter: drop-shadow(0 0 30px #313e50);
+} */
+
 /*layout */
 .home-pic-container{
     display: flex;
@@ -138,8 +148,6 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-
-
 }
 
 
@@ -158,6 +166,12 @@ form {
 /* Git */
 .fa-github {
     background: #313E50;
+    color: white;
+}
+
+/* Spotify */
+.fa-spotify {
+    background: #3F704d;
     color: white;
 }
 
@@ -244,6 +258,15 @@ div.card{
     justify-content: center;
     align-items: flex-start;
     flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.tools-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0;
     flex-wrap: wrap;
 }
 
