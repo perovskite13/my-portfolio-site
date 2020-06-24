@@ -270,4 +270,5 @@ div.card{
     flex-wrap: wrap;
 }
 
-
+/* @media (min-width: 300px) and (max-width: 800px) {
+} */
