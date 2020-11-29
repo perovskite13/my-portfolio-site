@@ -51,14 +51,14 @@ h1{
 
 h2{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     /* color: gray; */
     margin: 20px;
 }
 
 h3{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     /* color: #E1E5F2; */
     margin: 15px;
@@ -180,6 +180,21 @@ form {
     flex-direction: row;
 }
 
+#web-link{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+}
+
+#web-link:hover {
+  color: lightgray;
+  transition: all 0.5s;
+  cursor: pointer;
+}
 
 .nav-text{
     text-decoration: none;
@@ -196,6 +211,7 @@ form {
 }
 
 .nav-text a:hover {
+  transform: scale(1.1);
     font-weight: bold;
     background-color: #5C6672;
 }
@@ -262,9 +278,9 @@ div.card{
     margin: 0px;
 }
 
-#intro-text{
+.intro-text{
     text-align: center;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 /* Home button */
@@ -334,12 +350,12 @@ div.card{
     overflow: hidden;
 }
 .project-card1{
-  margin-top: 30vw; /* Half the height */
+  margin-top: 28vw; /* Half the height */
 
 }
 
 .project-card2{
-  margin-top: 85vw; /* Half the height */
+  margin-top: 80vw; /* Half the height */
 
 }
 
@@ -795,18 +811,22 @@ body.morning {
 
 @media (max-width: 700px) {
     h1{
-        font-size: 8vw;
+        font-size: 7vw;
+    }
+
+    h2{
+      font-size: 4vw;
     }
 
     h3{
-        font-size: 13px;
-    }
-    #intro-text{
         font-size: 12px;
+    }
+    .intro-text{
+        font-size: 11px;
     }
 
     p{
-        font-size: 12px;
+        font-size: 10px;
     }
 
 
@@ -821,6 +841,10 @@ body.morning {
     .homebutton{
         font-size: 10px;
     }
+
+    footer{
+      font-size: 3vw;
+  }
 
     .card-text{
         margin:0;
