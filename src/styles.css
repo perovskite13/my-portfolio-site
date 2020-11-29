@@ -173,6 +173,9 @@ form {
 }
 
 #social-links{
+  padding-top: 5px;
+  justify-content: center;
+  align-content: center;
     display: flex;
     flex-direction: row;
 }
