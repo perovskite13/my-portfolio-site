@@ -4,22 +4,56 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Introduction to Forms</title>
+        <title>Joanne Moo</title>
         <link rel="stylesheet" href="styles.css">
     </head>
+    <div class="wrapall">
 
+    <header >
+        <nav class = "nav-container">
+            <a class= "nav-text" href = "index.html" style="text-decoration: none;">Home</a>
+            <a class= "nav-text" href = "about.html" style="text-decoration: none;">About</a>
+            <a class= "nav-text" href = "portfolio.html" style="text-decoration: none;">Portfolio</a>
+            <a class= "nav-text" href = "forms.html" style="text-decoration: none;"> Contact</a>
+        </nav>
+    </header>
     <body>
-        <header>
-            <h2>Let's Chat!</h2>
-            <nav class = "nav-container">
-                <a class= "nav-text" href = "index.html" style="text-decoration: none;">Home</a>
-                <a class= "nav-text" href = "about.html" style="text-decoration: none;">About</a>
-                <a class= "nav-text" href = "portfolio.html" style="text-decoration: none;">Portfolio</a>
-                <a class= "nav-text" href = "forms.html" style="text-decoration: none;"> Contact</a>
-            </nav>
-        </header>
+        <div id="particles-js"></div>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+        <script src = "animation.js"></script>
 
-        <form action="https://formspree.io/xjvaovej" method="POST">
+        <div class="wrapper">
+            <input type="checkbox" id="hide-checkbox">
+            <label for="hide-checkbox" class="toggle">
+              <span class="toggle-button">
+                <span class="crater crater-1"></span>
+                <span class="crater crater-2"></span>
+                <span class="crater crater-3"></span>   
+                <span class="crater crater-4"></span>
+                <span class="crater crater-5"></span>
+                <span class="crater crater-6"></span>
+                <span class="crater crater-7"></span>
+              </span>
+              <span class="star star-1"></span>
+              <span class="star star-2"></span>
+              <span class="star star-3"></span>
+              <span class="star star-4"></span>
+              <span class="star star-5"></span>
+              <span class="star star-6"></span>
+              <span class="star star-7"></span>
+              <span class="star star-8"></span>
+            </label>
+          </div>
+
+        <div>
+            <h1> JOANNE MOO</h1>
+            <h2> Analyst // Musician</h2>
+        </div>
+
+        <h3 class = "animated fadeInUp">Let's Chat!</h3>
+
+        <form class = "animated fadeInUp" action="https://formspree.io/xjvaovej" method="POST">
             <div class = "form-item">
                 <label for = "name">Name</label>
                 <input type="text" id = "name" name = "name" >
@@ -40,4 +74,5 @@
             Joanne Moo 2020.
         </footer>
     </body>
+    </div>
 </html>

@@ -1,29 +1,15 @@
 <!doctype html>
-
 <html lang="en">
     <head>
-        <title>Joanne Moo</title>
+        <title >Joanne Moo</title>
         <meta name="description" content="Joanne Moo">
         <meta name = "author" content = "Joanne Moo">
-        <script src = "animation.js"></script>
-        <link rel="stylesheet" href = "styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="screen" href="styles.css">
 
     </head>
-
-    <body>
-
-        <div class="home-pic-container">
-            <img id = "home-pic" src="images/profile-pic.JPG" alt = "Joanne Moo">
-        </div>
-
-        <div>
-            <h1 class = "title"> JOANNE MOO</h1>
-            <h2 class = "subtitle"> Analyst // Musician</h2>
-        </div>
-
+    <div class="wrapall">
         <header>
-
             <nav class = "nav-container">
                 <a class= "nav-text" href = "index.html" style="text-decoration: none;">Home</a>
                 <a class= "nav-text" href = "about.html" style="text-decoration: none;">About</a>
@@ -31,70 +17,104 @@
                 <a class= "nav-text" href = "forms.html" style="text-decoration: none;"> Contact</a>
             </nav>
         </header>
-        <div id="content">
-            <div class = "card">
+    <body>
+        <!-- particles.js container --> 
+        <div id="particles-js"></div>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+        <script src = "animation.js"></script>
+
+        <!-- <div class="home-pic-container">
+            <img id = "home-pic" src="images/headshot-narrow.jpg" alt = "Joanne Moo">
+        </div> -->
+
+
+        <div class="wrapper">
+            <input type="checkbox" id="hide-checkbox">
+            <label for="hide-checkbox" class="toggle">
+              <span class="toggle-button">
+                <span class="crater crater-1"></span>
+                <span class="crater crater-2"></span>
+                <span class="crater crater-3"></span>   
+                <span class="crater crater-4"></span>
+                <span class="crater crater-5"></span>
+                <span class="crater crater-6"></span>
+                <span class="crater crater-7"></span>
+              </span>
+              <span class="star star-1"></span>
+              <span class="star star-2"></span>
+              <span class="star star-3"></span>
+              <span class="star star-4"></span>
+              <span class="star star-5"></span>
+              <span class="star star-6"></span>
+              <span class="star star-7"></span>
+              <span class="star star-8"></span>
+            </label>
+          </div>
+          
+          
+        <div >
+            <h1 > JOANNE MOO</h1>
+            <h2 > Analyst // Musician</h2>
+        </div>
+
+
+        <div class="animated fadeInUp" id="content">
+            <div class = "card" id="card-card">
                 <div class="body-div">
-                    <img id = "body-pic1" src="images/coding-pic.jpg" alt = "Tech">
-                    <div class="card-text">
-                        <h3>Analyst by day // Musician by night</h3>
-                        <p> Hello! Welcome to Joanne's space.</p>
-                        <p>Joanne is from Malaysia. She loves food and take pictures of food, nature and sometimes kookaburra.
-                            She is always looking out for new fun and pretty tech tools. 
-                            When she's not analysing data, she plays and writes for harp and piano. 
-                            Always inspired by orchestra influences, she also likes to explore and produce music with soundscape, synths and ambience.
+                    <img class="animated fadeInUp" id = "body-pic1" src="images/headshot-wide.jpg" alt = "Tech">
+                    <div class="card-text animated fadeInUp" >
+                        <h3 class="animated-box animated fadeInLeft">Analyst by day // Musician by night</h3>
+                        <p id="intro-text"> Welcome to Joanne's space.</p>
+                        <p id="intro-text"> Joanne is a modelling and analysis specialist, and a passionate musician.
+                             When she's not analysing data, she plays and writes for harp and piano. 
                         </p>
-                        <p>
-                            In her free time, you can find her playing games, fangirling over movies and video game soundtracks.
-                        </p>
-                        <a href="https://www.linkedin.com/in/joanne-moo-923ab99a/" class="fa fa-linkedin"></a>
-                        <a href="https://twitter.com/Oathkeeper_13" class="fa fa-twitter"></a>
-                        <a href="https://github.com/perovskite13/perovskite13.github.io" class="fa fa-github"></a>
-                        <a href="https://open.spotify.com/playlist/25Q3KLJqnUZX0kH91UjlWK?si=-TxDYRKQTcOA-5BCafBKLg" class="fa fa-spotify"></a>
+                        <div class="homebutton-container">
+                            <button class="homebutton"  onClick="location.href = 'about.html'">
+                                <span>Learn More</span>
+                            </button>
+                        </div>
 
-                        </a>
 
+                        <div class="animated fadeInUp" id="social-links">
+                            <a href="https://www.linkedin.com/in/joanne-moo-923ab99a/" class="fa fa-linkedin"></a>
+                            <a href="https://twitter.com/Oathkeeper_13" class="fa fa-twitter"></a>
+                            <a href="https://github.com/perovskite13/perovskite13.github.io" class="fa fa-github"></a>
+                            <a href="https://open.spotify.com/playlist/25Q3KLJqnUZX0kH91UjlWK?si=-TxDYRKQTcOA-5BCafBKLg" class="fa fa-spotify"></a>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <h2>FAVOURITE TOOLS</h2>
+                <h2 class="animated fadeInUp">FAVOURITE TOOLS</h2>
 
-                <div class="body-div">
-                    <div class = "tools-card">
+                <div class="body-div animated fadeInUp">
+                    <div class = "tools-card animated fadeInUp">
                         <img class = "icon" src="images/coding-icon.png" alt = "Analysis">
                         <h3>CODING & ANALYSIS</h3>
-                        <p class = "text-ani">
+                        <p class = "text-ani animated fadeInUp">
                             <span
                                 class="txt-rotate"
                                 data-period="2000"
-                                data-rotate='[ "R.", "SQL.", "Python.", "ArcGIS.", "ArcPy.", "HTML.", "CSS.", "Git.", "Java.", "Tableau.", "Spotfire.", "PowerBI.", "Excel VBA." , "EsDAT.", "ProUCL.", "PHREEQC."]'></span>
+                                data-rotate='[ "R.", "SQL.", "Python.", "ArcGIS.", "ArcPy.", "HTML.", "CSS.", "Git.", "Java.", "React.js.","Django.","Tableau.", "Spotfire.", "PowerBI.", "Excel VBA." , "EsDAT.", "ProUCL.", "PHREEQC."]'></span>
                         </p>
-                            <!-- R, SQL, ArcGIS, ArcPy, Python</p> -->
-
-                        
                     </div>
 
-                    <div class = "tools-card">
+                    <div class = "tools-card animated fadeInUp">
                         <img class = "icon" src="images/music-icon.png" alt = "Analysis">
                         <h3>MUSIC PRODUCTION</h3>
-                        <p class = "text-ani">
+                        <p class = "text-ani animated fadeInUp">
                             <span
                                 class="txt-rotate"
                                 data-period="2000"
                                 data-rotate='[ "Logic Pro X.", "Roland JUNO DS-88.", "Line Audio CM3.", "Audient iD14.", "iMovie." ]'></span>
                         </p>
-                        <!-- <p>Logic Pro X, Roland JUNO DS-88, Line Audio CM3</p> -->
-
-                    </div>
-                    
-
-
-
-
-                
+                    </div>                    
                 </div>
         </div>
-
         <footer>
             Joanne Moo 2020.
         </footer>
     </body>
+</div>
+
 </html>

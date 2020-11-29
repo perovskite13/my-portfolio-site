@@ -54,3 +54,38 @@ window.onload = function() {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
 };
+
+/************************************
+Credit concept:
+https://codepen.io/_Raunaq_/pen/wbRwea
+************************************/
+const wrapper = document.querySelector('.wrapall');
+const body = document.querySelector('body');
+const div = document.querySelector('div');
+
+wrapper.addEventListener('change', function(e) {
+  if(e.target.checked) {
+    body.classList.add('morning');
+  } else {
+    body.classList.remove('morning');
+  }
+})
+
+// wrapper.addEventListener('change', function(e) {
+//   if(e.target.checked) {
+//     div.style.backgroundColor = '#FFF'
+//     div.style.opacity=0.5
+//   } else {
+//     div.style.background = null
+//   }
+// })
+
+$(function() {
+  $('article').viewportChecker({
+    classToAdd: 'current',
+    repeat: true,
+    offset: '50%'
+  });
+});
+
+
