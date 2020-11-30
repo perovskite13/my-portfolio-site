@@ -868,7 +868,12 @@ body.morning {
     opacity: 0.7;
 }
 
-@media (max-width: 700px) {
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 700px) {
+  #particles-js {
+    position: absolute;
+    width: 98%;
+    height: 110%;
+} 
   .body-div{
     flex-direction: column;
   }
@@ -934,6 +939,10 @@ body.morning {
         padding: 1px;
     }
 
+    .photo{
+      padding-bottom: 2px;
+    }
+
     .about-text{
       flex-basis: 100%;
     }
@@ -947,6 +956,36 @@ body.morning {
 
     .form-item label{
         font-size: 3vw;
+    }
+
+    .project-card1, .project-card2 {
+      position: absolute;
+  
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%,-0%);
+      width: 80vw; 
+      height: 50vw; 
+      background: #3A435E;
+      overflow: hidden;
+  }
+
+    .project-card1{
+      margin-top: 55vw; 
+    
+    }
+    
+    .project-card2{
+      margin-top: 110vw; 
+    
+    }
+
+    .form-item #message-label{
+      flex-basis: 90px;
+    }
+
+    .form-item textarea#message{
+      flex-basis: 210px;
     }
 
 }
