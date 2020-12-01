@@ -232,6 +232,7 @@ hr {
   text-decoration: none;
   color: white;
   justify-content: center;
+  padding-top: 5px;
 }
 
 #web-link:hover {
