@@ -289,8 +289,10 @@ hr {
 
 .card-text{
     text-align: left;
-    /* padding : 5px;
-    margin: 10px; */
+    padding : 5px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+
     flex-wrap: wrap;
     /* width: 50%; */
     flex-basis: 90%;
@@ -340,6 +342,8 @@ div.card{
 .intro-text{
     text-align: center;
     font-size: 20px;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 /* Home button */
