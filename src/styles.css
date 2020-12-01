@@ -131,7 +131,7 @@ form {
 /*HOMEPAGE LAYOUT*/
 /*pictures*/
 #home-pic{
-    width: 55%;
+    width: 40%;
     /* height:35%; */
     height: auto;
     padding: 30px;
@@ -295,8 +295,8 @@ hr {
     /* width: 50%; */
     flex-basis: 90%;
 
-    padding : 0.2vw;
-    margin: 0.1vw;
+    padding : 1px;
+    margin: 1px;
 
  }
 
@@ -339,7 +339,7 @@ div.card{
 
 .intro-text{
     text-align: center;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 /* Home button */
@@ -391,13 +391,17 @@ div.card{
     right: 0;
   }
 .blank{
-    height: 110vw;
+    height: 170vw;
+}
+
+#card-card{
+  padding:0px;
 }
 
 #project-text{
     color: whitesmoke;
 }
-.project-card1, .project-card2 {
+.project-card1, .project-card2, .project-card3 {
     position: absolute;
 
     top: 50%;
@@ -405,16 +409,22 @@ div.card{
     transform: translate(-50%,-50%);
     width: 80vw; 
     height: 50vw; 
+    padding: 10px;
     background: #3A435E;
     overflow: hidden;
 }
 .project-card1{
-  margin-top: 28vw; /* Half the height */
+  margin-top: 20vw; /* Half the height */
 
 }
 
 .project-card2{
-  margin-top: 80vw; /* Half the height */
+  margin-top: 75vw; /* Half the height */
+
+}
+
+.project-card3{
+  margin-top: 130vw; /* Half the height */
 
 }
 
@@ -430,7 +440,7 @@ div.card{
     padding: 60px 30px;
 }
 
-.project-card1 .details,.project-cardw .details {
+.project-card1 .details,.project-card3 .details {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -441,11 +451,11 @@ div.card{
     left: 100%;
     padding: 60px 30px;
 }
-.project-card1:hover .details,.project-card2:hover .details {
+.project-card1:hover .details,.project-card2:hover .details,.project-card3:hover .details {
     top: 0;
     left: 0%;
 }
-.project-card1 .details h2,.project-card2 .details h2 {
+.project-card1 .details h2,.project-card2 .details h2,.project-card3 .details h2 {
     color: #fff;
     text-align: center;
     margin: 0;
@@ -453,7 +463,7 @@ div.card{
     border-bottom: 2px solid #fff;
 
 }
-.project-card1 .details p,.project-card2 .details p {
+.project-card1 .details p,.project-card2 .details p,.project-card3 .details p  {
     margin: 20px 0 0;
     color: #fff;
 }
@@ -961,7 +971,7 @@ body.morning {
         font-size: 3vw;
     }
 
-    .project-card1, .project-card2 {
+    .project-card1, .project-card2, .project-card3 {
       position: absolute;
   
       top: 0%;
@@ -980,6 +990,11 @@ body.morning {
     
     .project-card2{
       margin-top: 110vw; 
+    
+    }
+
+    .project-card3{
+      margin-top: 165vw; 
     
     }
 
