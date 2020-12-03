@@ -71,15 +71,6 @@ wrapper.addEventListener('change', function(e) {
   }
 })
 
-// wrapper.addEventListener('change', function(e) {
-//   if(e.target.checked) {
-//     div.style.backgroundColor = '#FFF'
-//     div.style.opacity=0.5
-//   } else {
-//     div.style.background = null
-//   }
-// })
-
 $(function() {
   $('article').viewportChecker({
     classToAdd: 'current',

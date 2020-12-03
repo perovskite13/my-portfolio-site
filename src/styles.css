@@ -241,6 +241,7 @@ hr {
   cursor: pointer;
 }
 
+
 .nav-text{
     text-decoration: none;
     display: inline-flex;
@@ -419,17 +420,17 @@ div.card{
     overflow: hidden;
 }
 .project-card1{
-  margin-top: 20vw; /* Half the height */
+  margin-top: 27vw; /* Half the height */
 
 }
 
 .project-card2{
-  margin-top: 75vw; /* Half the height */
+  margin-top: 82vw; /* Half the height */
 
 }
 
 .project-card3{
-  margin-top: 130vw; /* Half the height */
+  margin-top: 137vw; /* Half the height */
 
 }
 
